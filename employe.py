@@ -28,6 +28,11 @@ while True:
         mydb.commit()
     elif(choice==2):
         print('view employees')
+        sql = 'SELECT * FROM `emplyees`'
+        mycursor.execute(sql)
+        result = mycursor.fetchall()
+        for i in result:
+            print(i)
     elif(choice==3):
         print('search a employees')
     elif(choice==4):
