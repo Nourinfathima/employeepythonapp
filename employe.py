@@ -11,10 +11,6 @@ while True:
     print('4 update a employee')
     print('5 delete a employee')
     print('6 exit')
-    choice = int(input('Enter an option: '))
-    if(choice==1):
-        print('employee enter selected')
-        import mysql.connector
     choice = int(input('Enter the option:'))
     if(choice==1):
         print('employee enter selected')
