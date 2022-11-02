@@ -14,25 +14,8 @@ while True:
     choice = int(input('Enter the option:'))
     if(choice==1):
         print('employee enter selected')
-        empcode = input('enter the code: ')
-        empname = input('enter the name: ')
-        designation = input('enter the designation: ')
-        salary = input('enter the salary: ')
-        cmpany = input('enter the company name: ')
-        phnnumber = input('enter the phone number: ')
-        emailid = input('enter the email id: ')
-        password = input('enter the password: ')
-        sql = 'INSERT INTO `employees`(`empcode`, `empname`, `designation`, `Salary`, `cmpname`, `phnnumber`, `emailid`, `Password`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)'
-        data = (empcode ,empname, designation,salary,cmpany,phnnumber,emailid,password)
-        mycursor.execute(sql , data)
-        mydb.commit()
     elif(choice==2):
         print('view employees')
-        sql = 'SELECT * FROM `emplyees`'
-        mycursor.execute(sql)
-        result = mycursor.fetchall()
-        for i in result:
-            print(i)
     elif(choice==3):
         print('search a employees')
     elif(choice==4):
